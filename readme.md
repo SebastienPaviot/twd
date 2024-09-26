@@ -1,8 +1,10 @@
-twd readme
-create an image from an html template
+# TWD Readme
 
-installation
+## Description
+Create an image from an HTML template.
+
+## Installation
+Pour installer les dépendances, exécutez la commande suivante :
+```bash
 npm install
-
-command
 node t2i.js
