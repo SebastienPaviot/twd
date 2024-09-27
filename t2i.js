@@ -10,7 +10,8 @@ fs.readFile('./template.html', 'utf8', (err, html) => {
     // Utiliser le contenu du fichier HTML pour générer l'image
     nodeHtmlToImage({
       output: './image.png',
-      html: html
+      html: html,
+      content: { title: 'title', description: 'description sur plusieurs ligne, et oui!' }
     })
     .then(() => console.log('L\'image a été créée avec succès !'))
     .catch(error => console.error('Erreur lors de la création de l\'image :', error));
